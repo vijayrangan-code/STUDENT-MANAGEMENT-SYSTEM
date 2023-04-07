@@ -1,0 +1,36 @@
+<h1>Student Management System</h1>
+
+<div class="search">
+    <input class="search-btn" type="text" placeholder="search..." >
+    <a class="add" href="/adduser">ADD</a>
+</div>
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Location</td>
+            <td>Email</td>
+            <td>DOB</td>
+            <td>Education</td>
+            <td>Action</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+       {{#each rows}}
+       <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.FIRSTNAME}}</td>
+        <td>{{this.LASTNAME}}</td>
+        <td>{{this.LOCATION}}</td>
+        <td>{{this.EMAIL}}</td>
+        <td>{{this.DOB}}</td>
+        <td>{{this.EDUCATION}}</td>
+        <td><i class="fa-solid fa-user-pen"></i><a class="edit" href="/edituser/{{this.ID}}">Edit</a></td>
+        <td><i class="fa-regular fa-trash-can"></i><a onclick="return confirm('Are you sure want to delete ?')" class="delete" href="/deleteuser/{{this.ID}}">Delete</a></td>
+       </tr>
+       {{/each}}
+    </tbody>
+</table>
