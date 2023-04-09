@@ -17,7 +17,7 @@ exports.view = (req, res) => {
     connection.query("select * from details", (err, rows) => {
       connection.release();
       if (!err) {
-        console.log("good");
+        // console.log("good");
         res.render("home", { rows });
       } else {
         console.log("err in isting data" + err);

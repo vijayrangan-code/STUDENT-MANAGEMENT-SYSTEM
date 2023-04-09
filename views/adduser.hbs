@@ -1,33 +1,33 @@
 <h1>Add New Student</h1>
 {{#if msg}}
-<div class="alert">{{msg}}</div>
+  <div class="alert">{{msg}}</div>
 {{/if}}
-<form  method ="post"action="/adduser">
+<form method="post" action="/adduser">
   <div class="form-group1">
     <label for="firstname">FirstName :</label>
-    <input type="text"  name="firstname"/>
+    <input type="text" name="firstname" />
     <label for="lastname">LastName :</label>
-    <input type="text"  name="lastname"/>
+    <input type="text" name="lastname" />
   </div>
   <div class="form-group">
     <label for="location">Location :</label>
-    <input type="text"  name="location"/>
+    <input type="text" name="location" />
   </div>
   <div class="form-group">
     <label for="email">Email :</label>
-    <input type="text"  name="email"/>
+    <input type="text" name="email" />
   </div>
   <div class="form-group">
     <label for="dob">DOB :</label>
-    <input type="date"  name="dob"/>
+    <input type="date" name="dob" />
   </div>
   <div class="form-group">
     <label for="education">Education :</label>
-    <input type="text"  name="education"/>
+    <input type="text" name="education" />
   </div>
   <div class="form-group">
     <label for="about">About :</label>
-    <input type="textarea" id="textarea"  name="about"/>
+    <input type="textarea" id="textarea" name="about" />
   </div>
   <div class="form-group">
     <button type="submit">Submit</button>
